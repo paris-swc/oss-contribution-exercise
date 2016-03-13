@@ -1,0 +1,29 @@
+# Compiled Python files
+*.py[cod]
+
+# Backup files
+*~
+*.bak
+#*#
+
+# Unit test / coverage reports
+.coverage
+nosetests.xml
+/.cache
+
+# Eclipse project files and settings
+.project
+.pydevproject
+/.settings
+
+# pycharm project files
+.idea
+/Brian2.egg-info
+
+# vim files
+*.swp
+.rope*
+
+# IPython
+.ipynb_checkpoints
+
