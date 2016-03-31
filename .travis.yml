@@ -4,13 +4,8 @@ language:
 python:
   - 3.5
 
-install:
-  - pip install pytest-cov
-  - pip install python-coveralls
-
 script:
-  - py.test -v preprocess.py --cov preprocess
-  - coveralls
+  - py.test -v preprocess.py
 
 notifications:
   email: false
