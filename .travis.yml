@@ -5,8 +5,7 @@ python:
   - 3.5
 
 script:
-  - py.test -v preprocess.py
+  - py.test -v
 
 notifications:
   email: false
-

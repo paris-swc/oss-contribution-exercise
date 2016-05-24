@@ -23,5 +23,5 @@ To run the test on your machine, use the [pytest](http://pytest.org) package (sh
 
 In the directory where you cloned the repository, run:
 ```
-$ py.test preprocess.py
+$ py.test
 ```
