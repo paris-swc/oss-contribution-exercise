@@ -2,7 +2,7 @@
 
 ## Make the badge green
 
-[![Build Status](https://travis-ci.org/paris-swc/2016-03-29-testing-exercise.svg?branch=master)](https://travis-ci.org/paris-swc/2016-03-29-testing-exercise)
+[![Build Status](https://travis-ci.org/paris-swc/oss-contribution-exercise.svg?branch=master)](https://travis-ci.org/paris-swc/oss-contribution-exercise)
 
 ## Getting started
 
