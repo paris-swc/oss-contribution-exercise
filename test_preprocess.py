@@ -1,8 +1,7 @@
 import numpy as np
-import preprocess
+from numpy.testing.utils import assert_almost_equal
 
-# For testing, being that far away from the correct result is considered OK
-TOLERANCE = 1e-14
+import preprocess
 
 
 def test_center():
@@ -11,12 +10,12 @@ def test_center():
     test_data = np.array([1, 3, 5, 7])
 
     centered = preprocess.center(test_data)
-    assert abs(centered.mean()) < TOLERANCE
-    assert abs(centered.std() - test_data.std()) < TOLERANCE
+    assert_almost_equal(centered.mean(), 0)
+    assert_almost_equal(centered.std(), test_data.std())
 
     centered_5 = preprocess.center(test_data, 5)
-    assert abs(centered_5.mean() - 5) < TOLERANCE
-    assert abs(centered_5.std() - test_data.std()) < TOLERANCE
+    assert_almost_equal(centered_5.mean(), 5)
+    assert_almost_equal(centered_5.std(), test_data.std())
 
 
 def test_whiten():
@@ -53,7 +52,8 @@ def test_cut_to_same_size():
     data_1 = np.array([3, 4, 5])
     data_2 = np.array([6, 7, 8, 9, 10])
     cut_1, cut_2 = preprocess.cut_to_same_size(data_1, data_2)
-    assert len(cut_1) == len(cut_2) == len(data_1)
+    assert len(cut_1) == len(cut_2)
+    assert len(cut_1) == len(data_1)
     assert np.all(cut_1 == data_1)
     assert np.all(cut_2 == data_2[:3])
 
