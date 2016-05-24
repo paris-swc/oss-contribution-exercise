@@ -10,7 +10,10 @@
 * Clone the repository from your own fork so that you can work on it on your
   computer.
 * Login to [Travis CI](https://travis-ci.org) with your GitHub account and activate (your fork of) this repo for testing.
-* Edit this README file and replace all mentions of `paris-swc` in the link above with your user name.
+### Optional
+  * Edit this README file and replace all mentions of `paris-swc` in the link above with your user name.
+  * **Note:** changing the README file in this way is not something you'd do in a real project -- you do not want to include such a modification in the changes you contribute back to a project!
+
 
 ## Improve the code
 * Implement missing functions to make the unit tests pass (run tests either locally or let Travis run them for you each time you push changes).
@@ -19,7 +22,6 @@
 To run the test on your machine, use the [pytest](http://pytest.org) package (should already come pre-installed with Anaconda).
 
 In the directory where you cloned the repository, run:
-```Python
-py.test -v preprocess.py
 ```
-
+$ py.test preprocess.py
+```
